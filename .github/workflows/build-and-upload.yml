@@ -1,10 +1,16 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  build-and-release:
     runs-on: ubuntu-latest
-    name: Upload Acme::Automatix to CPAN
+    name: Build and release Acme::Automatix to CPAN
     steps:
+    - name: Configure
+      run: perl Makefile.PL
+    - name: Build
+      run: make
+    - name: Deliver locally
+      run: make dist
     - name: Upload to CPAN
       id: upload
       uses: thibaultduponchelle/u2c@master
