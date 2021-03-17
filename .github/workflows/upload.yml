@@ -8,7 +8,7 @@ jobs:
     steps:
     - name: Upload to CPAN
       id: upload
-      uses: thibaultduponchelle/my-sample-github-action@master
+      uses: thibaultduponchelle/u2c@master
       with:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
