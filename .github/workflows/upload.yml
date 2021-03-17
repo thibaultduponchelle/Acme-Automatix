@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Upload to CPAN
       id: upload
-      uses: thibaultduponchelle/action-upload-to-cpan@master
+      uses: thibaultduponchelle/my-sample-github-action@master
       with:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
