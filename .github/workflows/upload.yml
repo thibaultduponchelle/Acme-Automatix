@@ -1,0 +1,13 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Upload Acme::Automatix to CPAN
+    steps:
+    - name: Upload to CPAN
+      id: upload
+      uses: thibaultduponchelle/upload-to-cpan@v1
+    - name: Get the version that was uploaded
+      run: echo "The version was ${{ steps.upload.outputs.version }}"
+
