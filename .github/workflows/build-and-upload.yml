@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and release Acme::Automatix to CPAN
     steps:
+    - uses: actions/checkout@v2
     - name: Configure
       run: perl Makefile.PL
     - name: Build
