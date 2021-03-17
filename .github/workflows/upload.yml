@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Upload to CPAN
       id: upload
-      uses: thibaultduponchelle/upload-to-cpan@v1
+      uses: thibaultduponchelle/action-upload-to-cpan@v1
     - name: Get the version that was uploaded
       run: echo "The version was ${{ steps.upload.outputs.version }}"
 
