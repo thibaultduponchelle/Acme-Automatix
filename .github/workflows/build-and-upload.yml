@@ -14,7 +14,7 @@ jobs:
       run: make dist
     - name: Upload to CPAN
       id: upload
-      uses: thibaultduponchelle/u2c@master
+      uses: thibaultduponchelle/upload-to-cpan@master
       with:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
