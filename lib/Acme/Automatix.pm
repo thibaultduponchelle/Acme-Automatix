@@ -10,11 +10,11 @@ Acme::Automatix - The release of Acme::Automatix is automatix!
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 
 =head1 SYNOPSIS
@@ -22,6 +22,10 @@ our $VERSION = '0.03';
 Quick summary of what the module does...
 
 Nothing!
+
+It is used as a demo of the github action L<upload-to-cpan|https://github.com/thibaultduponchelle/upload-to-cpan>
+
+See how it is L<automatically released|https://github.com/thibaultduponchelle/Acme-Automatix/blob/master/.github/workflows/build-and-upload.yml>
 
 =head1 AUTHOR
 
